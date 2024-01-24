@@ -9,7 +9,7 @@ Mini-project to recover user enthusiasm for a website.
 
 2. Navigate to the project directory:
     ```bash
-    cd your-project
+    cd livre-d-or
 
 3. Install dependencies using Composer:
     ```bash
