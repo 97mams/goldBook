@@ -19,6 +19,9 @@ if (isset($_POST['username'], $_POST["message"]))
     else
     {
         $errors = $message->getErros();
+        echo '<pre>';
+        var_dump($errors);
+        echo '</pre>';
     }
 }
 $messages = $geustbook->getMessage();
