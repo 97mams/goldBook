@@ -5,7 +5,7 @@ use DateTime;
 
 class GeustBook
 {
-    private $file;
+    private string $file;
 
     public function __construct(string $file)
     {
@@ -29,6 +29,9 @@ class GeustBook
     {
         //trim pour enlever le vide avant et apres la contenu
         $content = trim(file_get_contents($this->file));
+        if (empty($content)) {
+            return [];
+        }
         // reccuper par ligne
         $lines = explode(PHP_EOL, $content);
         $messages = [];
